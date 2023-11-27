@@ -3,7 +3,7 @@ package AutoClass;
 public class Automobile {
 
 	int velocita;
-	float carburante, consumoMedio, totKmPercorsi; //disponibilitï¿½Carburante consumoMedio kmPercorsi
+	float carburante, consumoMedio, totKmPercorsi; //disponibilita Carburante consumoMedio kmPercorsi
 	
 	public void accelera() {
 		
@@ -21,7 +21,7 @@ public class Automobile {
 			
 	public void visualizzaDati() {
 		
-		System.out.println("velocitï¿½ attuale :" + velocitï¿½ + " km/h");
+		System.out.println("velocita attuale :" + velocita + " km/h");
 		System.out.println("carburante: " + carburante + " l");
 		System.out.println("consumo medio: " + consumoMedio + " km/l" );
 		System.out.println("km percorsi: " + totKmPercorsi + " km");
@@ -29,12 +29,12 @@ public class Automobile {
 	
 	public void aggiorna() { //simula il passaggio di 1h
 		
-		int kmPercorsi1h=velocita; //in un ora ho percorso un n di km pari alla velocitï¿½
+		int kmPercorsi1h=velocita; //in un ora ho percorso un n di km pari alla velocita
 		
 		totKmPercorsi+=kmPercorsi1h; //aggiunge al totale i km percorsi in un ora
 		carburante-=kmPercorsi1h/consumoMedio; //scalo l da carburante (in un ora)
 		
-		if(carburante<=0)//non c'ï¿½ carburante la macchina si ferma
+		if(carburante<=0)//non c'è carburante la macchina si ferma
 			velocita=0;
 }
 
